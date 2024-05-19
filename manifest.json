@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Wowhead Rextroy / MrGM Blocker / Filter (and other's that seemingly get promo'd a bit too much)",
+    "description": "Filters out and hides any news posts or articles on wowhead.com containing the word rextroy, MrGM and more following",
+    "version": "1.0.2",
+    "content_scripts": [{
+        "matches": ["https://www.wowhead.com/*"],
+        "js": ["hideRextroy.js"],
+        "all_frames": true
+    }],
+    "permissions": ["activeTab"]
+}
